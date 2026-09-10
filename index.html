@@ -85,7 +85,7 @@
   .amharic{
     font-family:'Noto Serif Ethiopic', serif;
     font-weight:600;
-    font-size: clamp(13px, 4vw, 16px);
+    font-size: clamp(30px, 4vw, 150px);
     color: var(--gold);
     letter-spacing: 0.02em;
     margin: 0 0 10px 0;
@@ -257,6 +257,35 @@
 
   .cta svg{ width: 13px; height: 13px; flex: none; }
 
+  .dress-code{
+    margin: 0 0 22px 0;
+    padding: 18px 16px;
+    border: 1px solid rgba(183,140,61,0.35);
+    border-radius: 8px;
+    background: rgba(183,140,61,0.05);
+    text-align:center;
+    opacity:0;
+    animation: riseIn 700ms ease-out 1260ms forwards;
+  }
+
+  .dress-code-label{
+    display:block;
+    font-family:'Jost', sans-serif;
+    font-size: clamp(10px, 2.8vw, 11.5px);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 8px;
+  }
+
+  .dress-code-value{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600;
+    font-size: clamp(20px, 5vw, 24px);
+    color: var(--forest);
+    letter-spacing: 0.03em;
+  }
+
   .sr-only{
     position:absolute; width:1px; height:1px; padding:0; margin:-1px;
     overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
@@ -337,7 +366,7 @@
 
     <div class="hero">
       <div class="hero-text">
-        <p class="amharic">እንኳን ደስ አላችሁ</p>
+        <p class="amharic">ሰርግ</p>
         <p class="preamble">You are lovingly invited to the wedding of</p>
         <h1 class="names">
           Robel . M
@@ -377,6 +406,20 @@
           <span class="event">Back home for lunch &amp; celebration</span>
         </li>
       </ul>
+
+      <div class="dress-code" aria-label="Dress code">
+        <span class="dress-code-label">Dress code</span>
+        <span class="dress-code-value">White / Bahlawi cloth / Suite</span>
+      </div>
+
+      <p class="cta" style="margin-top: 20px; text-align:center;">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="color: #DC2626;">
+          <path d="M12 3.5L2.5 20h19L12 3.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 9v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="12" cy="17" r="0.75" fill="currentColor"/>
+        </svg>
+        location is at Lege Tafo Abakiros 20 meter Road use the below link to view the location on map
+      </p>
 
       <p class="cta">
         <a href="https://maps.app.goo.gl/fDTZvs33jfT2mCd7A" target="_blank" rel="noopener noreferrer">
